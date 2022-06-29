@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* internal css */
+        h1 {
+            color: cyan;
+        }
+
+        /* name selector  lowest priority*/
+
+        #fh {
+            color: red;
+        }
+
+        /* id selector highest priority */
+
+        .title {
+            color: green;
+
+        }
+
+        /* div p {
+            descendant selector 
+            background-color: red;
+        } */
+
+        /* div>p {
+             child selectors 
+            background-color: yellow;
+        } */
+
+        /* div+p {
+             adjacent selector 
+            background-color: magenta;
+        } */
+
+        /* div~p {
+            background-color: burlywood;
+        } */
+
+        /* p:first-child {
+            every first paragraph of div section or any tag will be green
+            background-color: rgb(53, 120, 5);
+        } */
+
+
+
+        /* class selector second highest priority */
+    </style>
+    <!-- simplae selector :- 
+        id
+        class
+        name -->
+
+    <!-- descendant selectors:- 
+        descendant selector (spaces)
+        child selectors (>) 
+        adjacent selectors (+) 
+        general sibling selectors (~)  -->
+
+    <!-- pseudo class selector:-
+    selector:pseudoclass name{
+    color:black;
+    }
+    a:link{
+    color:red;
+    }
+    a:hover{
+    color:yellow;
+    }
+    a:active{
+    color:cyan;
+    } -->
+</head>
+
+<body>
+    <!-- inline css highest priority -->
+    <!-- style="color:yellow" -->
+    <h1 class="title" id="fh">Hello world</h1>
+    <div>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <section>
+            <p>para1 section</p>
+            <p>para2 section</p>
+        </section>
+        <p>para5</p>
+    </div>
+    <p>para6</p>
+    <p>para7</p>
+    <div>
+        <p>para1</p>
+        <p>para2</p>
+    </div>
+    <section>
+        <p>para1 section</p>
+        <p>para2 section</p>
+    </section>
+    <p>para6</p>
+    <p>para7</p>
+    <p>para8</p>
+
+
+
+
+</body>
+
+</html>
