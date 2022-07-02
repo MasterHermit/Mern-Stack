@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* position properties static,fixed,relative,absolute, */
+    .static {
+        position: relative;
+        border: 1px solid #ccc;
+    }
+
+    .fixed {
+        position: fixed;
+        border: 1px solid black;
+    }
+
+    .relative {
+        position: relative;
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+    }
+
+    .absolute {
+        position: absolute;
+        border: 2px solid red;
+
+    }
+
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        border: 1px solid black;
+
+    }
+</style>
+
+<body>
+    <p>before box 1</p>
+    <div class="static">
+        box 1
+
+    </div>
+    <!-- <div class="fixed">
+        it will not be scrolled by  the browse
+        box 2
+    </div>
+     -->
+    <div class="relative">
+        this div with the position relative
+        <div class="absolute">
+            this is absolute div
+        </div>
+    </div>
+    <div class="sticky">
+        sticky asdf ;lkj asdf ;lkj asdf ;lkj
+    </div>
+    <div style="padding-bottom:2000px">Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Voluptatum
+        consequatur magni, blanditiis pariatur odit
+        similique qui corrupti rerum est exercitationem
+        officia nesciunt dignissimos temporibus nihil natus
+        dolor excepturi facilis ad voluptatibus at
+        repellendus, non ullam incidunt? Obcaecati
+        dignissimos ratione esse! Dolorem fuga a iure
+        impedit, beatae nostrum quaerat iusto pariatur
+        eligendi voluptatibus magni animi quis molestias
+        ea harum ipsa quibusdam veritatis. Adipisci
+        perspiciatis ab voluptatem laboriosam eaque iure
+        molestias. Voluptatibus dolore dolor laudantium
+        enim, voluptatem obcaecati officiis veritatis
+        quae quis asperiores fugit, similique sint
+        doloremque minima. Deserunt nesciunt, fuga quos
+        blanditiis obcaecati fugiat commodi, necessitatibus
+        impedit corporis culpa, nihil similique.</div>
+
+
+</body>
+
+</html>
