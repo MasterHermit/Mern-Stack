@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let x = 234;
+        //  document.getElementById("demo").innerHTML = x.valueOf() + "<br />" + (345).valueOf() + "<br/>" + (34 + 45).valueOf()
+        document.getElementById(
+            "demo"
+        ).innerHTML = Number(true) + "<br/>" + Number(false) + "<br/>" + Number("10") + "<br/>" + Number("sgt") + "<br/>" + Number("10.93") + "<br/>" + Number("10,67") + "<br/>" + Number("  5 ") + "<br/>" + Number(" ")
+            //     1
+            //     0
+            //     10
+            //     NaN
+            //     10.93
+            //     NaN
+            //     5
+            //     0
+    </script>
+
+</body>
+
+</html>
