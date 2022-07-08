@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>
+Date 
+</title>
+</head>
+<body>
+	<p id="text"> </p>
+	<script>
+		
+		//Deifine one array of week days
+		const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"];
+
+		//create a new date through date object
+		const d = new Date();
+
+		//than for array pass the get day as index number
+		let day = week[d.getDay()];
+
+		//as pass to HTML
+		document.getElementById("text").innerHTML = day;
+
+	</script>
+</body>
+</html>

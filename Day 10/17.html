@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>
+Date 
+</title>
+</head>
+<body>
+	
+	 <label>Please input a number between 5 to 10</label>
+     <input type="text" id="number"/>
+     <button type="button" onClick="checkNumber()">Test Input Box </button>
+     <p id="demo"></p>
+	<script>
+		function checkNumber(){
+         
+         const message = document.getElementById("demo");
+           message.innerHTML = "";
+            let x = document.getElementById("number").value;
+            //console.log(x);
+            try{
+
+            	if(x == "") throw "empty";
+            	if(isNaN(x)) throw "Not a Number";
+
+            	x = Number(x);
+            	if(x < 5) throw "too lower number";
+            	if(x > 10) throw "too highest number";
+
+            } catch(err){
+            	message.innerHTML = "Fail try block due to this reason : " + err;
+            }
+            finally{
+            	document.getElementById("number").value = "";
+            }
+
+		}
+	</script>
+</body>
+</html>
+
+try - code block to run
+
+catch - handle any error
+
+finally - to run regardless of result
+
+throw  - defines custom error 

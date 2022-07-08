@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>
+Date 
+</title>
+</head>
+<body>
+	
+	 <p id="demo"> </p>
+     
+	<script>
+		let text = '{"emp":[' +
+'{"firstName":"Rajesh","lastName":"shah"},'+
+'{"firstName":"jayesh","lastName":"jha"}]}';
+
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+obj.emp[1].firstName + "  " + obj.emp[1].lastName
+	</script>
+</body>
+</html>
+
